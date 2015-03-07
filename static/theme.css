@@ -1,0 +1,73 @@
+@font-face
+{
+	font-family:Roboto Light;
+	src: url(Roboto-Light.ttf);
+}
+
+@font-face
+{
+	font-family:Roboto Medium;
+	src: url(Roboto-Medium.ttf);
+}
+
+@font-face
+{
+	font-family:Roboto Regular;
+	src: url(Roboto-Regular.ttf);
+}
+
+.campus {
+	font-family:Roboto Light;
+	font-size:30px;
+	color: #E1A449;
+}
+
+.maps {
+	font-family:Roboto Medium;
+	font-size:30px;	
+	color: #E1A449;
+}
+
+
+p {
+	display: inline;
+}
+
+#content{
+	height:100%;
+	width:100%;
+}
+
+#topbar {
+    margin: 5px;
+    height:20%;
+}
+
+#bodybar {
+    margin: 5px;
+    height:80%;
+}
+
+#topbody {
+	height:35%;
+	width:100%;
+}
+
+#botbody {
+	background: rgba(203, 224, 165, 0.9);
+	height:65%;
+	margin-bottom: 5px;
+	overflow: auto;
+	white-space: nowrap
+}
+
+body {
+	background-image: url("staticmap.png");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	font-family: Roboto Regular;
+}
+
+.well{
+    background: rgba(203, 224, 165, 0.9);
+}
