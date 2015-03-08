@@ -1,10 +1,20 @@
 {% extends "base.html" %}
 
 {% block content %}
-	contact page
-	<br>
-	<form action="/submit" method="post">
-		<input type="submit" value="Submit" class="btn btn-warning">
-    </form>
-	
+	<div id="topcontact">
+	</div>
+	<center>
+	<div id="contactform" class="well well-large">
+		<form action="/confirm" method="post">
+			<p class="formtext">Email address:</p>
+			<br>
+			<input type="text" class="form-control" id="textinput" name="email">
+			<br>
+			<p class="formtext">Message:</p>
+			<textarea name="message" class="form-control" rows="3"></textarea>
+			<br>
+			<input type="submit" value="Submit" class="btn btn-warning">
+    	</form>
+	</div>
+	</center>
 {% endblock %}
