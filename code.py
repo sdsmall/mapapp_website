@@ -17,7 +17,12 @@ class Demo(webapp2.RequestHandler):
   def get(self):
     render_template(self, 'demo.html', {})
 
+class Contact(webapp2.RequestHandler):
+  def get(self):
+    render_template(self, 'contact.html', {})
+
 app = webapp2.WSGIApplication([
   ('/', MainPage),
-  ('/demo', Demo)
+  ('/demo', Demo),
+  ('/contact', Contact)
 ])

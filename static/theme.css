@@ -28,6 +28,12 @@
 	color: #E1A449;
 }
 
+.demo {
+	font-family:Roboto Regular;
+	font-size:20px;	
+	color: #E1A449;
+}
+
 
 p {
 	display: inline;
@@ -45,7 +51,7 @@ p {
 
 #bodybar {
     margin: 5px;
-    height:96%;
+    height:85%;
 }
 
 #topbodydemo {
@@ -55,7 +61,7 @@ p {
 
 #botbodydemo {
 	background: rgba(203, 224, 165, 0.9);
-	height:62%;
+	height:75%;
 	margin-bottom: 5px;
 	overflow: auto;
 	white-space: nowrap;
