@@ -40,31 +40,33 @@ p {
 
 #topbar {
     margin: 5px;
-    height:20%;
+    height:4%;
 }
 
 #bodybar {
     margin: 5px;
-    height:80%;
+    height:96%;
 }
 
-#topbody {
-	height:35%;
+#topbodydemo {
+	height:10%;
 	width:100%;
 }
 
-#botbody {
+#botbodydemo {
 	background: rgba(203, 224, 165, 0.9);
-	height:65%;
+	height:62%;
 	margin-bottom: 5px;
 	overflow: auto;
-	white-space: nowrap
+	white-space: nowrap;
 }
 
-body {
-	background-image: url("staticmap.png");
+html, body {
+	height:100%;
+	background-image: url("map_bg.jpg");
 	background-repeat: no-repeat;
-	background-size: 100% auto;
+	background-size: cover;
+	overflow:hidden;
 	font-family: Roboto Regular;
 }
 

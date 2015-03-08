@@ -13,6 +13,11 @@ class MainPage(webapp2.RequestHandler):
   def get(self):
     render_template(self, 'index.html', {})
 
+class Demo(webapp2.RequestHandler):
+  def get(self):
+    render_template(self, 'demo.html', {})
+
 app = webapp2.WSGIApplication([
-  ('/', MainPage)
-], debug=True)
+  ('/', MainPage),
+  ('/demo', Demo)
+])
