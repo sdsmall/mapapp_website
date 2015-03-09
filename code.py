@@ -25,20 +25,30 @@ class Contact(webapp2.RequestHandler):
 
 class ConfirmMessage(webapp2.RequestHandler):
   def post(self):
-    message = cgi.escape(self.request.get('message'))
+    content = cgi.escape(self.request.get('message'))
     email = cgi.escape(self.request.get('email'))
+
+    message = Message(email = email, content = content)
+    message.put()
+
     render_template(self, 'confirm.html', {
       "email": email, 
-      "content": message
+      "content": content
       })
+
+class TechDetails(webapp2.RequestHandler):
+  def get(self):
+    render_template(self, 'tech.html', {})
 
 class Message(ndb.Model):
   email = ndb.StringProperty()
   content = ndb.StringProperty()
+  date = ndb.DateTimeProperty(auto_now_add=True)
 
 app = webapp2.WSGIApplication([
   ('/', MainPage),
   ('/demo', Demo),
   ('/contact', Contact),
-  ('/confirm', ConfirmMessage)
+  ('/confirm', ConfirmMessage),
+  ('/techdetails', TechDetails)
 ])
