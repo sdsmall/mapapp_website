@@ -114,6 +114,37 @@ p {
 	color: #E1A449;
 }
 
+#toptech {
+	height:15%;
+	width:100%;
+}
+
+#tech {
+	height:65%;
+	background: rgba(203, 224, 165, 0.9);
+	padding:2%;
+	font-family:Roboto Regular;
+	font-size:16px;	
+	color: #E1A449;
+
+}
+
+#xmldiv {
+	background-color: #E1A449;
+	width:50%;
+	height:73%;
+	margin-left:45%;
+	color:white;
+	overflow-y: scroll;
+	font-size:12px;
+}
+
+#techtext {
+	width:40%;
+	height:73%;
+	float:left;
+}
+
 textarea {
 	height:auto;
 	width:96%;
